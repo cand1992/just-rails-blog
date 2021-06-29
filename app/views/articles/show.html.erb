@@ -2,6 +2,9 @@
 
 <p><%= @article.body %></p>
 
+<div id="like_button_container">This will be replaced by React!</div><br>
+<%= javascript_pack_tag 'like_button' %>
+
 <%= link_to "Back", root_path %> | 
 <%= link_to "Edit", edit_article_path(@article) %> | 
 <%= link_to "Delete", article_path(@article), 
@@ -13,3 +16,4 @@
 
 <h2>Add a comment:</h2>
 <%= render 'comments/form' %>
+
